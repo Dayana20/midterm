@@ -1,26 +1,150 @@
 body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+}
+#index{
     background-image: url(pictures/space.jpg);
     background-repeat: no-repeat;
     height: 100%; 
     background-size: cover;
+
+    text-decoration: none;
 }
 
-#buttons{
-    /* display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 20% 20% 20% 20% 20%; */
+a:visited { 
+    text-decoration: none; 
+}
+
+/* #buttons{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 100px;
-    
       
-}
+} */
 
 #center_button{
-    background-color:aqua;
     grid-column: 2 / 3;
-    grid-row: 5 / 6;
+    grid-row: 4 / 5;
+    text-align: center;
+    /* width: 70px; */
     /* grid-column:100;
     grid-row:100; */
 
+}
+
+.button2{
+    background-color: transparent;
+    font-size: 2em;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    cursor: pointer;
+}
+
+#but2{
+    text-decoration: none;
+    color:#DDDDDD;
+}
+
+.button2:hover{
+    color:#DDDDDD;
+    border-color:#DDDDDD;
+    text-decoration: none;
+}
+
+
+.but{
+    background-color: transparent;
+    font-size: 2em;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    cursor: pointer;
+    text-decoration: none;
+    color:#DDDDDD;
+    border: solid;
+    vertical-align: baseline;
+    
+}
+
+.but:hover{
+    /* color:red; */
+    border-color:#62608b;
+    text-decoration: none;
+}
+#but_text{
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* START PAGE */
+#start{
+    background-color: #d5c7e7
+}
+
+#sL_container{
+    text-align: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 9;
+    background-color:rgb(164, 120, 214);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+#sL_container:hover{
+    background-color:#8b4867
+}
+#sL{
+    font-size: 2em;
+    text-align: center;
+    text-decoration: none;
+}
+#sL:hover{
+    color:black;
+}
+
+#sR_container{
+    text-align: center;
+    grid-column: 3 / 4;
+    grid-row: 1 / 9;
+    background-color:rgb(164, 120, 214);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+#sR_container:hover{
+    background-color:#8b4867
+}
+#sR{
+    font-size: 2em;
+    text-align: center;
+    text-decoration: none;
+}
+#sR:hover{
+    color:black;
+}
+
+#frog{
+    grid-column: 2 / 3;
+    grid-row: 3 / 9;
+}
+
+#p1{
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    font-size: 2em;
+    text-align: center;
+}
+
+#p2{
+    font-size: 2em;
+    text-align: center;
+}
+
+#p3{
+    font-size: 2em;
+    text-align: center;
 }
