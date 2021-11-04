@@ -2,12 +2,14 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 100px;
-    background-color: black;
+    /* background-color: black; */
 }
 #index{
     background-image: url(pictures/space.jpg);
     background-repeat: no-repeat;
     height: 100%; 
+    /* just added width -> if something breaks delete line 13 */
+    width: 100%; 
     background-size: cover;
 
     text-decoration: none;
@@ -276,3 +278,79 @@ a:visited {
 #endIt{
     text-decoration: none;
 }
+
+
+/* c1 */
+#help{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#text{
+    margin-top: 20%;
+    color:#8b4867;
+}
+
+#help_img{
+    width: 100px;
+    height: 100px;
+}
+
+#game1{
+    /* background-image: url(pictures/owl_house.jpg); */
+    background-color: azure;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    
+
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#block{
+    grid-column: 1/1;
+    grid-row: 4/4;
+}
+#block1{
+    grid-column: 2/2;
+    grid-row: 8/8;
+}
+#block2{
+    grid-column: 3/3;
+    grid-row: 11/11;
+}
+#block3{
+    grid-column: 4/4;
+    grid-row: 10/10;
+}
+
+#frog_char{
+    grid-column: 1/1;
+    grid-row: 10/10;
+    background-color: antiquewhite;
+}
+
+#myId {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.2s;
+  }
+
+
+  /* Thank You */
+
+  #first{
+      color:red;
+  }
+
+  #second{
+      color:blueviolet;
+  }
