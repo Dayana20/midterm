@@ -5,6 +5,11 @@ body{
     overflow: hidden;
     /* background-color: black; */
 }
+
+.autoplay_audio{
+    display:none;
+}
+
 #index{
     background-image: url(pictures/space.jpg);
     background-repeat: no-repeat;
@@ -531,4 +536,9 @@ a:visited {
     0%   { transform: translateY(0); }
     50%  { transform: translateY(-100px); }
     100% { transform: translateY(0); }
+}
+
+#thank_you{
+    text-decoration: none;
+    color: rgb(11, 15, 32);
 }
