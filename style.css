@@ -2,6 +2,7 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 100px;
+    overflow: hidden;
     /* background-color: black; */
 }
 #index{
@@ -272,11 +273,11 @@ a:visited {
     animation-delay:.6s,.6s;
 }
 
-#endItButton{
+.endItButton{
     background-color:transparent;
     border: transparent;
 }
-#endIt{
+.endIt{
     text-decoration: none;
 }
 
