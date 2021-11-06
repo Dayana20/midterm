@@ -13,6 +13,7 @@ body{
     background-size: cover;
 
     text-decoration: none;
+    overflow: hidden;
 }
 
 a:visited { 
@@ -282,20 +283,40 @@ a:visited {
 
 /* c1 */
 #help{
-    display: flex;
+    /* display: flex;
     align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between; */
+    background-color: rgb(11, 15, 32);
+    overflow: hidden;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-#text{
-    margin-top: 20%;
+#i1{
+    grid-row: 1/1;
+    grid-column: 0/2;
+}
+
+#i2{
+    grid-row: 1/1;
+    grid-column: 4/4;
+}
+
+.text{
+    /* margin-top: 20%; */
     color:#8b4867;
 }
 
-#help_img{
-    width: 100px;
-    height: 100px;
+.text_container{
+    grid-row: 1/1;
+    grid-column: 2/4;
+    text-align: center;
+}
+.help_img{
+    width: 500px;
+    height: 500px;
 }
 
 #game1{
@@ -342,15 +363,71 @@ a:visited {
     height: 100px;
     background-color: rgb(255, 255, 255);
     transition: 0.2s;
-  }
+}
+
+/* c1_1 */
+#direction{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    background-color: rgb(241, 205, 255);
+    overflow: hidden;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#text_container_1{
+    grid-row: 1/2;
+    grid-column: 2/4;
+    text-align: center;
+}
+
+#i1_1{
+    grid-row: 1/1;
+    grid-column: 0/2;
+}
+
+#i2_1{
+    grid-row: 1/1;
+    grid-column: 4/4;
+}
 
 
-  /* Thank You */
+/* c1_2 */
+#shelter{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    background-color: blanchedalmond;
+    overflow: hidden;
 
-  #first{
-      color:red;
-  }
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
-  #second{
-      color:blueviolet;
-  }
+#i1_2{
+    grid-row: 1/1;
+    grid-column: 0/2;
+}
+
+#i2_2{
+    grid-row: 1/1;
+    grid-column: 4/4;
+}
+
+#text_container_2{
+    grid-row: 1/2;
+    grid-column: 2/4;
+    text-align: center;
+}
+/* Thank You */
+
+#first{
+    color:red;
+}
+
+#second{
+    color:blueviolet;
+}
