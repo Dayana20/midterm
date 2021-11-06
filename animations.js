@@ -1,5 +1,7 @@
 function endIt() {
     alert("Sorry You're Dead :(");
+    location.href='index.html';
+    console.log("hwew!");
 }
 
 document.onkeydown = detectKey;

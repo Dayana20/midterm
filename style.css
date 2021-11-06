@@ -422,6 +422,40 @@ a:visited {
     grid-column: 2/4;
     text-align: center;
 }
+/* bear */
+#bear{
+    background-image: url(pictures/c1/bear.jpg);
+    background-repeat: no-repeat;
+    height: 100%; 
+    width: 100%; 
+    background-size: cover;
+}
+/* underwater */
+#underwater{
+    background-image: url(pictures/c2/underwater.jpeg);
+    background-repeat: no-repeat;
+    height: 100%; 
+    width: 100%; 
+    background-size: cover;
+}
+/* destroyed */
+#destroyed{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.saturated {
+    height: 800px;
+    animation: saturate 2s infinite;
+}
+
+@keyframes saturate {
+    0%, 100%  { filter: saturate(none); }
+    50% {filter: saturate(500%); }
+}
+
 /* Thank You */
 
 #first{
@@ -431,3 +465,4 @@ a:visited {
 #second{
     color:blueviolet;
 }
+
