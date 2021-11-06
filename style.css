@@ -17,9 +17,17 @@ body{
     /* just added width -> if something breaks delete line 13 */
     width: 100%; 
     background-size: cover;
-
     text-decoration: none;
     overflow: hidden;
+    text-align: center;
+}
+
+#story_line{
+    color:white;
+    text-shadow: rgb(216, 241, 255) 1px 0 10px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-size: 1.3em;
 }
 
 a:visited { 
