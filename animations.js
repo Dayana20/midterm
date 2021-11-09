@@ -10,3 +10,8 @@ function endIt2() {
     // location.href="index.html";
     
 } 
+
+function congrats(){
+    alert("You Won! :)"); 
+    location.href="index.html";
+}
