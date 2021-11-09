@@ -7,7 +7,6 @@ function endIt2() {
         alert("Sorry You're Dead :("); 
         location.href="index.html";
     }, 9000);
-    // location.href="index.html";
     
 } 
 

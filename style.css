@@ -503,33 +503,35 @@ a:visited {
     background-image: url(pictures/thanky.gif);
 }
 
-.loading{
+/* animation from: */
+/* https://www.youtube.com/watch?v=MF0oMODWjz0 */
+.spin{
     color:blueviolet;
     position: relative;
 }
 
-.loading span{
+.spin span{
     display: inline-block;
-    animation-name: loading;
+    animation-name: spin;
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 
 }
-.loading span:nth-child(2){
+.spin span:nth-child(2){
     animation-delay: 0.3s;
 }
-.loading span:nth-child(3){
+.spin span:nth-child(3){
     animation-delay: 0.5s;
 }
-.loading span:nth-child(4){
+.spin span:nth-child(4){
     animation-delay: 0.7s;
 }
-.loading span:nth-child(5){
+.spin span:nth-child(5){
     animation-delay: 0.9s;
 }
 
-@keyframes loading{
+@keyframes spin{
     0%,80%{
         transform: rotateY(360deg);
     }
