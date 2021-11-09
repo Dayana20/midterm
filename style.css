@@ -498,7 +498,8 @@ a:visited {
     margin-top: 20%;
     font-size: 2em;
     text-align: center;
-    /* background-color: plum; */
+    /* background from:  */
+    /* https://giphy.com/gifs/party-confetti-decoration-26hlR0pvtJ7e0qigE */
     background-image: url(pictures/thanky.gif);
 }
 
